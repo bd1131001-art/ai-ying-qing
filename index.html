@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艾應青 (ai ying qing) - 個人專業主頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        /* Header section */
+        .header {
+            background-color: #0077b5; /* LinkedIn Blue */
+            color: white;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .header-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-right: 30px;
+            overflow: hidden;
+        }
+        .header-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-info h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .header-info p {
+            margin: 5px 0 15px 0;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .btn-contact {
+            background-color: white;
+            color: #0077b5;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        /* Main content styles */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            padding: 30px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #0077b5;
+            border-bottom: 2px solid #0077b5;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .job-item, .edu-item {
+            margin-bottom: 20px;
+        }
+        .job-title, .edu-school {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .job-company, .edu-degree {
+            color: #666;
+        }
+        .job-date, .edu-date {
+            color: #999;
+            font-size: 14px;
+        }
+        
+        /* Skills styles */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background-color: #e0f2f1;
+            color: #0077b5;
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        
+        /* Contact Form */
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-photo">
+            <img src="https://zh.wikipedia.org/zh-tw/%E6%A8%82%E4%BD%A9%E5%85%AC%E4%B8%BB">
+        </div>
+        <div class="header-info">
+            <h1>許明智 (Michael Hsu)</h1>
+            <p>資深軟體工程師與技術團隊領袖 | 專注於分佈式系統與雲端架構</p>
+            <p>台北市, 台灣</p>
+            <a href="mailto:your.email@example.com" class="btn-contact">聯絡我</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-column">
+            <section id="about">
+                <h2>關於我</h2>
+                <p>這裏填寫您的個人簡介。描述您的專業背景、核心價值、以及您對工作的熱情。可以提到您擅長解決的問題類型，以及您追求的職業目標。讓訪客快速了解您的專業形象。</p>
+            </section>
+
+            <section id="experience">
+                <h2>工作經歷</h2>
+                <div class="job-item">
+                    <div class="job-title">資深軟體工程師 / 技術團隊長</div>
+                    <div class="job-company">XX 科技有限公司</div>
+                    <div class="job-date">2020年1月 - 至今</div>
+                    <ul>
+                        <li>領導 5 人研發團隊，負責核心產品的架構設計與開發。</li>
+                        <li>導入微服務架構，提升系統可擴展性 50%。</li>
+                        <li>優化 CI/CD 流程，縮短部署時間 30%。</li>
+                    </ul>
+                </div>
+                <div class="job-item">
+                    <div class="job-title">軟體工程師</div>
+                    <div class="job-company">YY 資訊股份有限公司</div>
+                    <div class="job-date">2017年6月 - 2019年12月</div>
+                    <ul>
+                        <li>負責後端 API 開發與維護（使用 Java/Go）。</li>
+                        <li>參與資料庫效能調優，解決高並發場景下的技術難題。</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section id="skills">
+                <h2>技能與專長</h2>
+                <ul class="skills-list">
+                    <li>Java</li>
+                    <li>Go</li>
+                    <li>Python</li>
+                    <li>Kubernetes</li>
+                    <li>AWS</li>
+                    <li>微服務架構</li>
+                    <li>系統架構設計</li>
+                    <li>團隊管理</li>
+                    <li>敏捷開發 (Agile)</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>學歷</h2>
+                <div class="edu-item">
+                    <div class="edu-school">國立臺灣大學</div>
+                    <div class="edu-degree">資訊工程碩士</div>
+                    <div class="edu-date">2015年 - 2017年</div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>聯絡方式</h2>
+                <p>如果您對我的背景感興趣，歡迎透過電子郵件與我聯絡：<br>
+                   <strong>your.email@example.com</strong>
+                </p>
+                <form class="contact-form">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="您的電子郵件" required>
+                    <textarea placeholder="您的留言" rows="4" required></textarea>
+                    <button type="submit">傳送訊息</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
